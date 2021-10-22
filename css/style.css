@@ -1,0 +1,16 @@
+div {
+    border: solid black 1px;
+    margin:2px;    
+}    
+header {
+    background-color: orange;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
