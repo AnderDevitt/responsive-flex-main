@@ -1,7 +1,8 @@
 div {
     border: solid black 1px;
-    margin:2px;    
+    margin: 2px;    
 }    
+
 header {
     background-color: orange;
     display:flex;
@@ -9,8 +10,39 @@ header {
     align-items: center;
 }
 
+.logo {
+    background-color: #2b78e4;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    color: #2b78e4;
+    margin: 2px;
+}
+
 footer {
     background-color: orange;
     display: flex;
     flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+.social-media img {
+    width: 80px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 2px;
 }
