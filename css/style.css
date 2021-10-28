@@ -1,10 +1,11 @@
-/*div {
-    border: solid black 1px;
-    margin: 2px;    
+div {
+    /*border: solid black 1px;*/
+    margin: 5px;   
+    padding: 5px; 
 }    */
 body {
     margin: 0px;
-    background-color: orange;
+    background-color: #2b78e4;
 }
 header {
     background-color: orange;
@@ -74,6 +75,7 @@ footer {
         display: flex;
         flex-direction: row;
         text-align: center;
+        padding-bottom: 50px;
     }
     header .header-title {
         padding-left: 15%;
@@ -87,6 +89,8 @@ footer {
         display:flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .training-option img {
