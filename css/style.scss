@@ -1,0 +1,80 @@
+$primary-color: #ff9900;
+$secondary-color: #2b78e4;
+@mixin header-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    @include header-footer();
+    background-color: $primary-color;
+    
+    align-items: center;
+    padding-bottom: 20px;
+}
+.logo {
+    background-color: $secondary-color;
+    width: 70px;
+    height:70px;
+    margin-left: 5%;
+
+}
+footer {
+    @include header-footer();
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 600px){
+    @mixin header-footer-desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    header {
+        @include header-footer-desktop();
+        text-align: center;
+        padding-bottom: 50px;
+    
+    .header-title {
+        padding-left: 15%;
+        font-size: 50px;
+    }
+    .logo {
+        margin-left: 5%;
+    }
+
+     .main-content {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /*padding-top: 20px;
+        padding-bottom: 20px;*/
+    }
+
+    .training-option {
+        img{
+        width: 350px;
+        height: 350px;
+        }
+    }   
+
+    footer {
+        @include header-footer-desktop();
+        justify-content: space-between;
+    }
+    .social-media {
+        @include header-footer-desktop();
+        img {
+            margin: 10%;
+        }
+    }
+    
+    .contact-info {
+        display: flex;
+        align-items: flex-end;
+        }
+    }
+}
